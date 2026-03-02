@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecKeeper - 银河麒麟安全卫士</title>
+    <!-- 引入 Font Awesome 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 引入 ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .nav {
+            background: #34495e;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .nav-button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .active-nav {
+            background: #e74c3c !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+        }
+        
+        .content {
+            padding: 30px;
+            min-height: 500px;
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #e74c3c;
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .chart-container {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .chart-title {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .status-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .status-item.normal { border-left-color: #27ae60; }
+        .status-item.warning { border-left-color: #f39c12; }
+        .status-item.danger { border-left-color: #e74c3c; }
+        
+        .status-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            min-width: 24px;
+            text-align: center;
+        }
+        
+        .status-item.normal .status-icon { color: #27ae60; }
+        .status-item.warning .status-icon { color: #f39c12; }
+        .status-item.danger .status-icon { color: #e74c3c; }
+        
+        .status-label {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-bottom: 4px;
+        }
+        
+        .status-value {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .scan-button {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            border: none;
+            padding: 18px 36px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .report-button {
+            background: linear-gradient(45deg, #27ae60, #2ecc71) !important;
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3) !important;
+        }
+        
+        .report-button:hover {
+            background: linear-gradient(45deg, #229954, #27ae60) !important;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4) !important;
+        }
+        
+        .scan-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+        }
+        
+        .scan-button:disabled {
+            background: #95a5a6;
+            transform: none;
+            box-shadow: none;
+            cursor: not-allowed;
+        }
+        
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .active-tab {
+            display: block;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: white;
+        }
+        
+        .data-table th {
+            background: #34495e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: normal;
+        }
+        
+        .data-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .data-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .status-indicator {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .status-safe { background: #27ae60; }
+        .status-warning { background: #f39c12; }
+        .status-danger { background: #e74c3c; }
+        
+        .system-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .system-info-item {
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .system-info-item i {
+            color: #3498db;
+            width: 16px;
+        }
+        
+        /* 图标基础样式 */
+        .fas, .far, .fab {
+            margin-right: 8px;
+            width: 16px;
+            text-align: center;
+        }
+        
+        /* 导航栏图标 */
+        .nav-button i {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        /* 卡片标题图标 */
+        .card h3 i {
+            color: #3498db;
+            font-size: 16px;
+        }
+        
+        /* 加载动画 */
+        .loading-spinner {
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideOut {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+        
+        .shortcut-hint {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(52, 73, 94, 0.9);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 1000;
+        }
+        
+        @media (max-width: 768px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .system-info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-button {
+                width: 200px;
+                justify-content: center;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .scan-button, .report-button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 SecKeeper - 银河麒麟安全卫士</h1>
+            <p>全面守护您的系统安全</p>
+        </div>
+        
+        <div class="nav">
+            <button class="nav-button active-nav" data-tab="dashboard">
+                <i class="fas fa-chart-bar"></i> 安全概览
+            </button>
+            <button class="nav-button" data-tab="assets">
+                <i class="fas fa-desktop"></i> 资产清点
+            </button>
+            <button class="nav-button" data-tab="compliance">
+                <i class="fas fa-check-circle"></i> 合规检查
+            </button>
+            <button class="nav-button" data-tab="vulnerabilities">
+                <i class="fas fa-exclamation-triangle"></i> 漏洞扫描
+            </button>
+        </div>
+        
+        <div class="content">
+            <!-- 安全概览页面 -->
+            <div id="dashboard" class="tab-content active-tab">
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <h3><i class="fas fa-desktop"></i> 系统资产</h3>
+                        <div class="stat-number" id="total-assets">156</div>
+                        <p>已识别的软件包和服务</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3><i class="fas fa-check-circle"></i> 合规状态</h3>
+                        <div class="stat-number" id="compliance-rate">87%</div>
+                        <p>安全配置检查通过率</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3><i class="fas fa-exclamation-triangle"></i> 安全风险</h3>
+                        <div class="stat-number" id="high-risk-count">2</div>
+                        <p>发现的高危漏洞数量</p>
+                    </div>
+                </div>
+                
+                <!-- 实时状态监控 -->
+                <div class="card">
+                    <h3><i class="fas fa-chart-line"></i> 实时系统状态</h3>
+                    <div class="status-grid" id="real-time-status">
+                        <!-- 动态生成状态卡片 -->
+                    </div>
+                </div>
+                
+                <!-- 图表区域 -->
+                <div class="card">
+                    <h3><i class="fas fa-chart-pie"></i> 安全态势总览</h3>
+                    <div class="charts-grid">
+                        <div class="chart-container">
+                            <div id="vulnPieChart" style="width: 100%; height: 300px;"></div>
+                            <div class="chart-title">漏洞分布</div>
+                        </div>
+                        <div class="chart-container">
+                            <div id="complianceChart" style="width: 100%; height: 300px;"></div>
+                            <div class="chart-title">合规状态</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 操作按钮组 -->
+                <div class="button-group">
+                    <button class="scan-button" onclick="startFullScan()">
+                        <i class="fas fa-rocket"></i> 一键全面扫描
+                    </button>
+                    <button class="scan-button report-button" onclick="generatePDFReport()">
+                        <i class="fas fa-file-pdf"></i> 生成PDF报告
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 资产清点页面 -->
+            <div id="assets" class="tab-content">
+                <!-- 动态生成资产内容 -->
+            </div>
+            
+            <!-- 合规检查页面 -->
+            <div id="compliance" class="tab-content">
+                <!-- 动态生成合规内容 -->
+            </div>
+            
+            <!-- 漏洞扫描页面 -->
+            <div id="vulnerabilities" class="tab-content">
+                <!-- 动态生成漏洞内容 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

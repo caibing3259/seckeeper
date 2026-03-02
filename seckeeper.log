@@ -1,0 +1,919 @@
+2025-11-30 11:27:53,503 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.180.132:5000
+2025-11-30 11:27:53,503 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-30 11:27:53,507 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 11:27:53,922 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 11:27:53,923 - werkzeug - INFO -  * Debugger PIN: 137-801-259
+2025-11-30 11:28:00,767 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:00] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-11-30 11:28:14,432 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:14] "OPTIONS /api/scan HTTP/1.1" 200 -
+2025-11-30 11:28:14,438 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:14] "POST /api/scan HTTP/1.1" 200 -
+2025-11-30 11:28:17,446 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:17] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-11-30 11:28:19,568 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:19] "GET /api/dashboard HTTP/1.1" 200 -
+2025-11-30 11:28:19,576 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:19] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 11:28:20,580 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:20] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 11:28:20,640 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:20] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 11:28:20,953 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:20] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 11:28:20,964 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:20] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 11:28:21,019 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:21] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 11:28:21,078 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:21] "GET /api/dashboard HTTP/1.1" 200 -
+2025-11-30 11:28:21,083 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:21] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 11:28:22,199 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:22] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 11:28:22,244 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:22] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 11:28:22,509 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:22] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 11:28:22,516 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:22] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 11:28:22,535 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:22] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 11:28:28,053 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:28] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 11:28:28,080 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:28] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 11:28:29,811 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:29] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 11:28:33,982 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:33] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 11:28:35,231 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:35] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 11:28:36,223 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:36] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 11:28:45,220 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:45] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 11:28:45,246 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:45] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 11:28:49,386 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:49] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 11:28:49,403 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:49] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 11:28:49,412 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:49] "[35m[1mPOST /api/report HTTP/1.1[0m" 500 -
+2025-11-30 11:28:49,425 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:49] "[35m[1mPOST /api/report HTTP/1.1[0m" 500 -
+2025-11-30 11:28:55,084 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:55] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 11:28:55,099 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:55] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 11:28:55,104 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:55] "[35m[1mPOST /api/report HTTP/1.1[0m" 500 -
+2025-11-30 11:28:55,117 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:28:55] "[35m[1mPOST /api/report HTTP/1.1[0m" 500 -
+2025-11-30 11:29:05,131 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:29:05] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 11:29:05,163 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:29:05] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 11:29:05,678 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:29:05] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 11:29:10,978 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:29:10] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 11:29:12,190 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:29:12] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 11:29:13,250 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 11:29:13] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 12:18:18,605 - werkzeug - INFO -  * Detected change in '/home/ces/backend/core/real_vulnerability_scanner.py', reloading
+2025-11-30 12:18:19,320 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 12:18:19,755 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 12:18:19,755 - werkzeug - INFO -  * Debugger PIN: 137-801-259
+2025-11-30 12:18:22,792 - werkzeug - INFO -  * Detected change in '/home/ces/backend/core/real_vulnerability_scanner.py', reloading
+2025-11-30 12:18:22,794 - werkzeug - INFO -  * Detected change in '/home/ces/backend/core/.goutputstream-HXLNG3', reloading
+2025-11-30 12:18:22,794 - werkzeug - INFO -  * Detected change in '/home/ces/backend/core/real_vulnerability_scanner.py', reloading
+2025-11-30 12:18:22,948 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 12:18:23,368 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 12:18:23,369 - werkzeug - INFO -  * Debugger PIN: 137-801-259
+2025-11-30 12:18:50,331 - werkzeug - INFO -  * Detected change in '/home/ces/backend/core/report_generator_fixed_safe.py', reloading
+2025-11-30 12:18:50,700 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 12:18:51,234 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 12:18:51,234 - werkzeug - INFO -  * Debugger PIN: 137-801-259
+2025-11-30 12:18:57,817 - werkzeug - INFO -  * Detected change in '/home/ces/backend/core/report_generator_fixed_safe.py', reloading
+2025-11-30 12:18:57,819 - werkzeug - INFO -  * Detected change in '/home/ces/backend/core/.goutputstream-JKFNG3', reloading
+2025-11-30 12:18:57,820 - werkzeug - INFO -  * Detected change in '/home/ces/backend/core/report_generator_fixed_safe.py', reloading
+2025-11-30 12:18:58,462 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 12:18:58,904 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 12:18:58,904 - werkzeug - INFO -  * Debugger PIN: 137-801-259
+2025-11-30 12:20:52,341 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/rl_config.py', reloading
+2025-11-30 12:20:52,350 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/rl_config.py', reloading
+2025-11-30 12:20:52,350 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/rl_config.py', reloading
+2025-11-30 12:20:52,351 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/rl_config.py', reloading
+2025-11-30 12:20:52,351 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/__init__.py', reloading
+2025-11-30 12:20:52,351 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/__init__.py', reloading
+2025-11-30 12:20:52,351 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/__init__.py', reloading
+2025-11-30 12:20:52,352 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/__init__.py', reloading
+2025-11-30 12:20:52,352 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/rl_settings.py', reloading
+2025-11-30 12:20:52,352 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/rl_settings.py', reloading
+2025-11-30 12:20:52,352 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/rl_settings.py', reloading
+2025-11-30 12:20:52,353 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/rl_settings.py', reloading
+2025-11-30 12:20:52,354 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/testdrawings.py', reloading
+2025-11-30 12:20:52,354 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/testdrawings.py', reloading
+2025-11-30 12:20:52,355 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/testdrawings.py', reloading
+2025-11-30 12:20:52,355 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/testdrawings.py', reloading
+2025-11-30 12:20:52,355 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgetbase.py', reloading
+2025-11-30 12:20:52,356 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgetbase.py', reloading
+2025-11-30 12:20:52,356 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgetbase.py', reloading
+2025-11-30 12:20:52,356 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgetbase.py', reloading
+2025-11-30 12:20:52,356 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/utils.py', reloading
+2025-11-30 12:20:52,357 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/utils.py', reloading
+2025-11-30 12:20:52,357 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/utils.py', reloading
+2025-11-30 12:20:52,357 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/utils.py', reloading
+2025-11-30 12:20:52,358 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/transform.py', reloading
+2025-11-30 12:20:52,358 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/transform.py', reloading
+2025-11-30 12:20:52,358 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/transform.py', reloading
+2025-11-30 12:20:52,358 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/transform.py', reloading
+2025-11-30 12:20:52,359 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderbase.py', reloading
+2025-11-30 12:20:52,359 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderbase.py', reloading
+2025-11-30 12:20:52,359 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderbase.py', reloading
+2025-11-30 12:20:52,359 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderbase.py', reloading
+2025-11-30 12:20:52,360 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPDF.py', reloading
+2025-11-30 12:20:52,360 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPDF.py', reloading
+2025-11-30 12:20:52,360 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPDF.py', reloading
+2025-11-30 12:20:52,360 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPDF.py', reloading
+2025-11-30 12:20:52,361 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderSVG.py', reloading
+2025-11-30 12:20:52,361 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderSVG.py', reloading
+2025-11-30 12:20:52,361 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderSVG.py', reloading
+2025-11-30 12:20:52,361 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderSVG.py', reloading
+2025-11-30 12:20:52,361 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPM.py', reloading
+2025-11-30 12:20:52,362 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPM.py', reloading
+2025-11-30 12:20:52,362 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPM.py', reloading
+2025-11-30 12:20:52,362 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPM.py', reloading
+2025-11-30 12:20:52,363 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/testshapes.py', reloading
+2025-11-30 12:20:52,363 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/testshapes.py', reloading
+2025-11-30 12:20:52,363 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/testshapes.py', reloading
+2025-11-30 12:20:52,363 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/testshapes.py', reloading
+2025-11-30 12:20:52,364 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/__init__.py', reloading
+2025-11-30 12:20:52,364 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/__init__.py', reloading
+2025-11-30 12:20:52,364 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/__init__.py', reloading
+2025-11-30 12:20:52,364 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/__init__.py', reloading
+2025-11-30 12:20:52,364 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/shapes.py', reloading
+2025-11-30 12:20:52,365 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/shapes.py', reloading
+2025-11-30 12:20:52,365 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/shapes.py', reloading
+2025-11-30 12:20:52,365 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/shapes.py', reloading
+2025-11-30 12:20:52,365 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPS.py', reloading
+2025-11-30 12:20:52,366 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPS.py', reloading
+2025-11-30 12:20:52,366 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPS.py', reloading
+2025-11-30 12:20:52,366 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/renderPS.py', reloading
+2025-11-30 12:20:52,366 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/flags.py', reloading
+2025-11-30 12:20:52,367 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/flags.py', reloading
+2025-11-30 12:20:52,367 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/flags.py', reloading
+2025-11-30 12:20:52,367 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/flags.py', reloading
+2025-11-30 12:20:52,368 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/grids.py', reloading
+2025-11-30 12:20:52,368 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/grids.py', reloading
+2025-11-30 12:20:52,368 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/grids.py', reloading
+2025-11-30 12:20:52,368 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/grids.py', reloading
+2025-11-30 12:20:52,369 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/markers.py', reloading
+2025-11-30 12:20:52,369 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/markers.py', reloading
+2025-11-30 12:20:52,371 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/markers.py', reloading
+2025-11-30 12:20:52,371 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/markers.py', reloading
+2025-11-30 12:20:52,371 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/signsandsymbols.py', reloading
+2025-11-30 12:20:52,372 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/signsandsymbols.py', reloading
+2025-11-30 12:20:52,372 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/signsandsymbols.py', reloading
+2025-11-30 12:20:52,372 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/signsandsymbols.py', reloading
+2025-11-30 12:20:52,372 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/adjustableArrow.py', reloading
+2025-11-30 12:20:52,372 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/adjustableArrow.py', reloading
+2025-11-30 12:20:52,373 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/adjustableArrow.py', reloading
+2025-11-30 12:20:52,373 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/adjustableArrow.py', reloading
+2025-11-30 12:20:52,374 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/table.py', reloading
+2025-11-30 12:20:52,374 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/table.py', reloading
+2025-11-30 12:20:52,374 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/table.py', reloading
+2025-11-30 12:20:52,375 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/table.py', reloading
+2025-11-30 12:20:52,375 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/eventcal.py', reloading
+2025-11-30 12:20:52,375 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/eventcal.py', reloading
+2025-11-30 12:20:52,375 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/eventcal.py', reloading
+2025-11-30 12:20:52,376 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/eventcal.py', reloading
+2025-11-30 12:20:52,376 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/__init__.py', reloading
+2025-11-30 12:20:52,376 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/__init__.py', reloading
+2025-11-30 12:20:52,377 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/__init__.py', reloading
+2025-11-30 12:20:52,377 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/widgets/__init__.py', reloading
+2025-11-30 12:20:52,378 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/axes.py', reloading
+2025-11-30 12:20:52,378 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/slidebox.py', reloading
+2025-11-30 12:20:52,378 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/doughnut.py', reloading
+2025-11-30 12:20:52,379 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/areas.py', reloading
+2025-11-30 12:20:52,379 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/utils3d.py', reloading
+2025-11-30 12:20:52,379 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/__init__.py', reloading
+2025-11-30 12:20:52,379 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/lineplots.py', reloading
+2025-11-30 12:20:52,380 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/utils.py', reloading
+2025-11-30 12:20:52,380 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/linecharts.py', reloading
+2025-11-30 12:20:52,380 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/dotbox.py', reloading
+2025-11-30 12:20:52,380 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/markers.py', reloading
+2025-11-30 12:20:52,381 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/spider.py', reloading
+2025-11-30 12:20:52,381 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/barcharts.py', reloading
+2025-11-30 12:20:52,381 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/legends.py', reloading
+2025-11-30 12:20:52,381 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/textlabels.py', reloading
+2025-11-30 12:20:52,382 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/charts/piecharts.py', reloading
+2025-11-30 12:20:52,383 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/lto.py', reloading
+2025-11-30 12:20:52,383 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/fourstate.py', reloading
+2025-11-30 12:20:52,383 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/test.py', reloading
+2025-11-30 12:20:52,384 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/code128.py', reloading
+2025-11-30 12:20:52,384 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/ecc200datamatrix.py', reloading
+2025-11-30 12:20:52,384 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/qrencoder.py', reloading
+2025-11-30 12:20:52,384 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/__init__.py', reloading
+2025-11-30 12:20:52,385 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/usps4s.py', reloading
+2025-11-30 12:20:52,385 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/widgets.py', reloading
+2025-11-30 12:20:52,385 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/usps.py', reloading
+2025-11-30 12:20:52,385 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/qr.py', reloading
+2025-11-30 12:20:52,386 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/eanbc.py', reloading
+2025-11-30 12:20:52,386 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/code39.py', reloading
+2025-11-30 12:20:52,386 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/common.py', reloading
+2025-11-30 12:20:52,386 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/code93.py', reloading
+2025-11-30 12:20:52,387 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/barcode/dmtx.py', reloading
+2025-11-30 12:20:52,389 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/stacked_column.py', reloading
+2025-11-30 12:20:52,389 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/excelcolors.py', reloading
+2025-11-30 12:20:52,390 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/exploded_pie.py', reloading
+2025-11-30 12:20:52,390 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/radar.py', reloading
+2025-11-30 12:20:52,390 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/stacked_bar.py', reloading
+2025-11-30 12:20:52,391 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/__init__.py', reloading
+2025-11-30 12:20:52,391 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/scatter.py', reloading
+2025-11-30 12:20:52,391 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/line_chart.py', reloading
+2025-11-30 12:20:52,391 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/scatter_lines.py', reloading
+2025-11-30 12:20:52,392 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/simple_pie.py', reloading
+2025-11-30 12:20:52,392 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/linechart_with_markers.py', reloading
+2025-11-30 12:20:52,392 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/runall.py', reloading
+2025-11-30 12:20:52,393 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/scatter_lines_markers.py', reloading
+2025-11-30 12:20:52,393 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/filled_radar.py', reloading
+2025-11-30 12:20:52,393 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/clustered_column.py', reloading
+2025-11-30 12:20:52,393 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/bubble.py', reloading
+2025-11-30 12:20:52,394 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/graphics/samples/clustered_bar.py', reloading
+2025-11-30 12:20:52,397 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/frames.py', reloading
+2025-11-30 12:20:52,397 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/tableofcontents.py', reloading
+2025-11-30 12:20:52,397 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/tableofcontents.py', reloading
+2025-11-30 12:20:52,398 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/tableofcontents.py', reloading
+2025-11-30 12:20:52,398 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/tableofcontents.py', reloading
+2025-11-30 12:20:52,398 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/tableofcontents.py', reloading
+2025-11-30 12:20:52,398 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/paragraph.py', reloading
+2025-11-30 12:20:52,398 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/paragraph.py', reloading
+2025-11-30 12:20:52,399 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/paragraph.py', reloading
+2025-11-30 12:20:52,399 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/paragraph.py', reloading
+2025-11-30 12:20:52,399 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/figures.py', reloading
+2025-11-30 12:20:52,399 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/figures.py', reloading
+2025-11-30 12:20:52,400 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/figures.py', reloading
+2025-11-30 12:20:52,400 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/figures.py', reloading
+2025-11-30 12:20:52,400 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/paraparser.py', reloading
+2025-11-30 12:20:52,402 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/paraparser.py', reloading
+2025-11-30 12:20:52,402 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/paraparser.py', reloading
+2025-11-30 12:20:52,402 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/paraparser.py', reloading
+2025-11-30 12:20:52,402 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/flowables.py', reloading
+2025-11-30 12:20:52,403 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/flowables.py', reloading
+2025-11-30 12:20:52,403 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/flowables.py', reloading
+2025-11-30 12:20:52,403 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/flowables.py', reloading
+2025-11-30 12:20:52,403 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/xpreformatted.py', reloading
+2025-11-30 12:20:52,403 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/xpreformatted.py', reloading
+2025-11-30 12:20:52,403 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/xpreformatted.py', reloading
+2025-11-30 12:20:52,404 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/xpreformatted.py', reloading
+2025-11-30 12:20:52,404 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/tables.py', reloading
+2025-11-30 12:20:52,404 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/tables.py', reloading
+2025-11-30 12:20:52,404 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/tables.py', reloading
+2025-11-30 12:20:52,405 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/tables.py', reloading
+2025-11-30 12:20:52,405 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/multicol.py', reloading
+2025-11-30 12:20:52,405 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/multicol.py', reloading
+2025-11-30 12:20:52,406 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/multicol.py', reloading
+2025-11-30 12:20:52,406 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/multicol.py', reloading
+2025-11-30 12:20:52,406 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/__init__.py', reloading
+2025-11-30 12:20:52,407 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/__init__.py', reloading
+2025-11-30 12:20:52,407 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/__init__.py', reloading
+2025-11-30 12:20:52,407 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/__init__.py', reloading
+2025-11-30 12:20:52,408 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/doctemplate.py', reloading
+2025-11-30 12:20:52,408 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/doctemplate.py', reloading
+2025-11-30 12:20:52,409 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/doctemplate.py', reloading
+2025-11-30 12:20:52,409 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/doctemplate.py', reloading
+2025-11-30 12:20:52,409 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/para.py', reloading
+2025-11-30 12:20:52,410 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/para.py', reloading
+2025-11-30 12:20:52,410 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/para.py', reloading
+2025-11-30 12:20:52,410 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/platypus/para.py', reloading
+2025-11-30 12:20:52,413 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesbolditalic.py', reloading
+2025-11-30 12:20:52,413 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesbolditalic.py', reloading
+2025-11-30 12:20:52,414 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesbolditalic.py', reloading
+2025-11-30 12:20:52,414 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesbolditalic.py', reloading
+2025-11-30 12:20:52,414 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesbolditalic.py', reloading
+2025-11-30 12:20:52,415 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesbold.py', reloading
+2025-11-30 12:20:52,415 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesbold.py', reloading
+2025-11-30 12:20:52,415 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesbold.py', reloading
+2025-11-30 12:20:52,415 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesbold.py', reloading
+2025-11-30 12:20:52,416 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_standard.py', reloading
+2025-11-30 12:20:52,416 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_standard.py', reloading
+2025-11-30 12:20:52,416 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_standard.py', reloading
+2025-11-30 12:20:52,416 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_standard.py', reloading
+2025-11-30 12:20:52,416 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/cidfonts.py', reloading
+2025-11-30 12:20:52,417 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/cidfonts.py', reloading
+2025-11-30 12:20:52,417 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/cidfonts.py', reloading
+2025-11-30 12:20:52,417 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/cidfonts.py', reloading
+2025-11-30 12:20:52,417 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helvetica.py', reloading
+2025-11-30 12:20:52,418 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helvetica.py', reloading
+2025-11-30 12:20:52,418 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helvetica.py', reloading
+2025-11-30 12:20:52,418 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helvetica.py', reloading
+2025-11-30 12:20:52,418 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_cidfontdata.py', reloading
+2025-11-30 12:20:52,419 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_cidfontdata.py', reloading
+2025-11-30 12:20:52,419 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_cidfontdata.py', reloading
+2025-11-30 12:20:52,419 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_cidfontdata.py', reloading
+2025-11-30 12:20:52,419 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_symbol.py', reloading
+2025-11-30 12:20:52,420 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_symbol.py', reloading
+2025-11-30 12:20:52,420 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_symbol.py', reloading
+2025-11-30 12:20:52,420 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_symbol.py', reloading
+2025-11-30 12:20:52,420 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticaboldoblique.py', reloading
+2025-11-30 12:20:52,421 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticaboldoblique.py', reloading
+2025-11-30 12:20:52,421 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticaboldoblique.py', reloading
+2025-11-30 12:20:52,421 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticaboldoblique.py', reloading
+2025-11-30 12:20:52,421 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_zapfdingbats.py', reloading
+2025-11-30 12:20:52,421 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_zapfdingbats.py', reloading
+2025-11-30 12:20:52,422 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_zapfdingbats.py', reloading
+2025-11-30 12:20:52,422 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_zapfdingbats.py', reloading
+2025-11-30 12:20:52,422 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courierboldoblique.py', reloading
+2025-11-30 12:20:52,422 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courierboldoblique.py', reloading
+2025-11-30 12:20:52,423 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courierboldoblique.py', reloading
+2025-11-30 12:20:52,423 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courierboldoblique.py', reloading
+2025-11-30 12:20:52,423 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfdoc.py', reloading
+2025-11-30 12:20:52,424 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfdoc.py', reloading
+2025-11-30 12:20:52,424 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfdoc.py', reloading
+2025-11-30 12:20:52,424 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfdoc.py', reloading
+2025-11-30 12:20:52,424 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfmetrics.py', reloading
+2025-11-30 12:20:52,425 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfmetrics.py', reloading
+2025-11-30 12:20:52,425 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfmetrics.py', reloading
+2025-11-30 12:20:52,425 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfmetrics.py', reloading
+2025-11-30 12:20:52,425 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_macexpert.py', reloading
+2025-11-30 12:20:52,426 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_macexpert.py', reloading
+2025-11-30 12:20:52,426 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_macexpert.py', reloading
+2025-11-30 12:20:52,426 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_macexpert.py', reloading
+2025-11-30 12:20:52,426 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_zapfdingbats.py', reloading
+2025-11-30 12:20:52,427 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_zapfdingbats.py', reloading
+2025-11-30 12:20:52,427 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_zapfdingbats.py', reloading
+2025-11-30 12:20:52,427 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_zapfdingbats.py', reloading
+2025-11-30 12:20:52,427 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_can_cmap_data.py', reloading
+2025-11-30 12:20:52,427 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_can_cmap_data.py', reloading
+2025-11-30 12:20:52,428 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_can_cmap_data.py', reloading
+2025-11-30 12:20:52,428 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_can_cmap_data.py', reloading
+2025-11-30 12:20:52,428 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courier.py', reloading
+2025-11-30 12:20:52,428 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courier.py', reloading
+2025-11-30 12:20:52,429 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courier.py', reloading
+2025-11-30 12:20:52,429 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courier.py', reloading
+2025-11-30 12:20:52,429 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courierbold.py', reloading
+2025-11-30 12:20:52,429 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courierbold.py', reloading
+2025-11-30 12:20:52,429 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courierbold.py', reloading
+2025-11-30 12:20:52,430 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courierbold.py', reloading
+2025-11-30 12:20:52,430 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticaoblique.py', reloading
+2025-11-30 12:20:52,430 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticaoblique.py', reloading
+2025-11-30 12:20:52,430 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticaoblique.py', reloading
+2025-11-30 12:20:52,431 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticaoblique.py', reloading
+2025-11-30 12:20:52,431 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfform.py', reloading
+2025-11-30 12:20:52,431 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfform.py', reloading
+2025-11-30 12:20:52,433 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfform.py', reloading
+2025-11-30 12:20:52,434 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfform.py', reloading
+2025-11-30 12:20:52,434 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_pdfdoc.py', reloading
+2025-11-30 12:20:52,434 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_pdfdoc.py', reloading
+2025-11-30 12:20:52,434 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_pdfdoc.py', reloading
+2025-11-30 12:20:52,434 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_pdfdoc.py', reloading
+2025-11-30 12:20:52,434 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courieroblique.py', reloading
+2025-11-30 12:20:52,435 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courieroblique.py', reloading
+2025-11-30 12:20:52,435 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courieroblique.py', reloading
+2025-11-30 12:20:52,436 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_courieroblique.py', reloading
+2025-11-30 12:20:52,436 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/acroform.py', reloading
+2025-11-30 12:20:52,436 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/acroform.py', reloading
+2025-11-30 12:20:52,436 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/acroform.py', reloading
+2025-11-30 12:20:52,437 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/acroform.py', reloading
+2025-11-30 12:20:52,437 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfutils.py', reloading
+2025-11-30 12:20:52,437 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfutils.py', reloading
+2025-11-30 12:20:52,437 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfutils.py', reloading
+2025-11-30 12:20:52,438 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfutils.py', reloading
+2025-11-30 12:20:52,438 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_macroman.py', reloading
+2025-11-30 12:20:52,438 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_macroman.py', reloading
+2025-11-30 12:20:52,438 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_macroman.py', reloading
+2025-11-30 12:20:52,439 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_macroman.py', reloading
+2025-11-30 12:20:52,439 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata.py', reloading
+2025-11-30 12:20:52,439 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata.py', reloading
+2025-11-30 12:20:52,440 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata.py', reloading
+2025-11-30 12:20:52,440 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata.py', reloading
+2025-11-30 12:20:52,440 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticabold.py', reloading
+2025-11-30 12:20:52,441 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticabold.py', reloading
+2025-11-30 12:20:52,441 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticabold.py', reloading
+2025-11-30 12:20:52,442 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_helveticabold.py', reloading
+2025-11-30 12:20:52,442 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfpattern.py', reloading
+2025-11-30 12:20:52,442 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfpattern.py', reloading
+2025-11-30 12:20:52,442 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfpattern.py', reloading
+2025-11-30 12:20:52,443 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/pdfpattern.py', reloading
+2025-11-30 12:20:52,443 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesroman.py', reloading
+2025-11-30 12:20:52,443 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesroman.py', reloading
+2025-11-30 12:20:52,443 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesroman.py', reloading
+2025-11-30 12:20:52,444 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesroman.py', reloading
+2025-11-30 12:20:52,444 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/__init__.py', reloading
+2025-11-30 12:20:52,444 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/__init__.py', reloading
+2025-11-30 12:20:52,444 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/__init__.py', reloading
+2025-11-30 12:20:52,445 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/__init__.py', reloading
+2025-11-30 12:20:52,445 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_symbol.py', reloading
+2025-11-30 12:20:52,445 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_symbol.py', reloading
+2025-11-30 12:20:52,445 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_symbol.py', reloading
+2025-11-30 12:20:52,445 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_symbol.py', reloading
+2025-11-30 12:20:52,446 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/ttfonts.py', reloading
+2025-11-30 12:20:52,446 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/ttfonts.py', reloading
+2025-11-30 12:20:52,446 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/ttfonts.py', reloading
+2025-11-30 12:20:52,446 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/ttfonts.py', reloading
+2025-11-30 12:20:52,446 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/rl_codecs.py', reloading
+2025-11-30 12:20:52,447 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/rl_codecs.py', reloading
+2025-11-30 12:20:52,447 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/rl_codecs.py', reloading
+2025-11-30 12:20:52,447 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/rl_codecs.py', reloading
+2025-11-30 12:20:52,447 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_glyphlist.py', reloading
+2025-11-30 12:20:52,448 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_glyphlist.py', reloading
+2025-11-30 12:20:52,448 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_glyphlist.py', reloading
+2025-11-30 12:20:52,448 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_glyphlist.py', reloading
+2025-11-30 12:20:52,448 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesitalic.py', reloading
+2025-11-30 12:20:52,448 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesitalic.py', reloading
+2025-11-30 12:20:52,449 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesitalic.py', reloading
+2025-11-30 12:20:52,449 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_widths_timesitalic.py', reloading
+2025-11-30 12:20:52,449 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_winansi.py', reloading
+2025-11-30 12:20:52,449 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_winansi.py', reloading
+2025-11-30 12:20:52,450 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_winansi.py', reloading
+2025-11-30 12:20:52,450 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfbase/_fontdata_enc_winansi.py', reloading
+2025-11-30 12:20:52,460 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/textobject.py', reloading
+2025-11-30 12:20:52,461 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/textobject.py', reloading
+2025-11-30 12:20:52,461 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/textobject.py', reloading
+2025-11-30 12:20:52,462 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/textobject.py', reloading
+2025-11-30 12:20:52,462 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/textobject.py', reloading
+2025-11-30 12:20:52,462 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/canvas.py', reloading
+2025-11-30 12:20:52,462 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/canvas.py', reloading
+2025-11-30 12:20:52,462 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/canvas.py', reloading
+2025-11-30 12:20:52,464 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/canvas.py', reloading
+2025-11-30 12:20:52,465 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pdfgeom.py', reloading
+2025-11-30 12:20:52,465 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pdfgeom.py', reloading
+2025-11-30 12:20:52,465 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pdfgeom.py', reloading
+2025-11-30 12:20:52,465 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pdfgeom.py', reloading
+2025-11-30 12:20:52,465 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/__init__.py', reloading
+2025-11-30 12:20:52,465 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/__init__.py', reloading
+2025-11-30 12:20:52,466 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/__init__.py', reloading
+2025-11-30 12:20:52,466 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/__init__.py', reloading
+2025-11-30 12:20:52,466 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pathobject.py', reloading
+2025-11-30 12:20:52,466 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pathobject.py', reloading
+2025-11-30 12:20:52,467 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pathobject.py', reloading
+2025-11-30 12:20:52,467 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pathobject.py', reloading
+2025-11-30 12:20:52,467 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pdfimages.py', reloading
+2025-11-30 12:20:52,467 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pdfimages.py', reloading
+2025-11-30 12:20:52,468 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pdfimages.py', reloading
+2025-11-30 12:20:52,468 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/pdfgen/pdfimages.py', reloading
+2025-11-30 12:20:52,477 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/testutils.py', reloading
+2025-11-30 12:20:52,478 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/normalDate.py', reloading
+2025-11-30 12:20:52,478 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/normalDate.py', reloading
+2025-11-30 12:20:52,479 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/normalDate.py', reloading
+2025-11-30 12:20:52,479 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/normalDate.py', reloading
+2025-11-30 12:20:52,479 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/codecharts.py', reloading
+2025-11-30 12:20:52,479 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/codecharts.py', reloading
+2025-11-30 12:20:52,480 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/codecharts.py', reloading
+2025-11-30 12:20:52,480 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/codecharts.py', reloading
+2025-11-30 12:20:52,480 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/utils.py', reloading
+2025-11-30 12:20:52,481 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/utils.py', reloading
+2025-11-30 12:20:52,481 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/utils.py', reloading
+2025-11-30 12:20:52,481 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/utils.py', reloading
+2025-11-30 12:20:52,481 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rltempfile.py', reloading
+2025-11-30 12:20:52,482 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rltempfile.py', reloading
+2025-11-30 12:20:52,482 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rltempfile.py', reloading
+2025-11-30 12:20:52,482 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rltempfile.py', reloading
+2025-11-30 12:20:52,482 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/textsplit.py', reloading
+2025-11-30 12:20:52,482 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/textsplit.py', reloading
+2025-11-30 12:20:52,483 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/textsplit.py', reloading
+2025-11-30 12:20:52,483 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/textsplit.py', reloading
+2025-11-30 12:20:52,483 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/validators.py', reloading
+2025-11-30 12:20:52,483 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/validators.py', reloading
+2025-11-30 12:20:52,484 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/validators.py', reloading
+2025-11-30 12:20:52,484 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/validators.py', reloading
+2025-11-30 12:20:52,484 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rparsexml.py', reloading
+2025-11-30 12:20:52,484 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rparsexml.py', reloading
+2025-11-30 12:20:52,485 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rparsexml.py', reloading
+2025-11-30 12:20:52,485 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rparsexml.py', reloading
+2025-11-30 12:20:52,485 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/attrmap.py', reloading
+2025-11-30 12:20:52,486 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/attrmap.py', reloading
+2025-11-30 12:20:52,486 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/attrmap.py', reloading
+2025-11-30 12:20:52,486 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/attrmap.py', reloading
+2025-11-30 12:20:52,486 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/styles.py', reloading
+2025-11-30 12:20:52,487 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/styles.py', reloading
+2025-11-30 12:20:52,487 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/styles.py', reloading
+2025-11-30 12:20:52,487 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/styles.py', reloading
+2025-11-30 12:20:52,487 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/boxstuff.py', reloading
+2025-11-30 12:20:52,488 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/boxstuff.py', reloading
+2025-11-30 12:20:52,488 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/boxstuff.py', reloading
+2025-11-30 12:20:52,488 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/boxstuff.py', reloading
+2025-11-30 12:20:52,488 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/randomtext.py', reloading
+2025-11-30 12:20:52,489 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/randomtext.py', reloading
+2025-11-30 12:20:52,489 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/randomtext.py', reloading
+2025-11-30 12:20:52,490 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/randomtext.py', reloading
+2025-11-30 12:20:52,490 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/PyFontify.py', reloading
+2025-11-30 12:20:52,490 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/PyFontify.py', reloading
+2025-11-30 12:20:52,491 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/PyFontify.py', reloading
+2025-11-30 12:20:52,491 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/PyFontify.py', reloading
+2025-11-30 12:20:52,492 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pagesizes.py', reloading
+2025-11-30 12:20:52,492 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pagesizes.py', reloading
+2025-11-30 12:20:52,492 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pagesizes.py', reloading
+2025-11-30 12:20:52,493 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pagesizes.py', reloading
+2025-11-30 12:20:52,493 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/enums.py', reloading
+2025-11-30 12:20:52,493 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/enums.py', reloading
+2025-11-30 12:20:52,493 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/enums.py', reloading
+2025-11-30 12:20:52,494 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/enums.py', reloading
+2025-11-30 12:20:52,495 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/extformat.py', reloading
+2025-11-30 12:20:52,496 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/extformat.py', reloading
+2025-11-30 12:20:52,496 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/extformat.py', reloading
+2025-11-30 12:20:52,496 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/extformat.py', reloading
+2025-11-30 12:20:52,496 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/fontfinder.py', reloading
+2025-11-30 12:20:52,496 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/fontfinder.py', reloading
+2025-11-30 12:20:52,496 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/fontfinder.py', reloading
+2025-11-30 12:20:52,497 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/fontfinder.py', reloading
+2025-11-30 12:20:52,497 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pygments2xpre.py', reloading
+2025-11-30 12:20:52,498 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pygments2xpre.py', reloading
+2025-11-30 12:20:52,498 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pygments2xpre.py', reloading
+2025-11-30 12:20:52,498 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pygments2xpre.py', reloading
+2025-11-30 12:20:52,498 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/corp.py', reloading
+2025-11-30 12:20:52,499 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/corp.py', reloading
+2025-11-30 12:20:52,499 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/corp.py', reloading
+2025-11-30 12:20:52,499 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/corp.py', reloading
+2025-11-30 12:20:52,499 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pdfencrypt.py', reloading
+2025-11-30 12:20:52,500 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pdfencrypt.py', reloading
+2025-11-30 12:20:52,500 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pdfencrypt.py', reloading
+2025-11-30 12:20:52,500 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/pdfencrypt.py', reloading
+2025-11-30 12:20:52,500 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rl_safe_eval.py', reloading
+2025-11-30 12:20:52,500 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rl_safe_eval.py', reloading
+2025-11-30 12:20:52,501 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rl_safe_eval.py', reloading
+2025-11-30 12:20:52,501 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rl_safe_eval.py', reloading
+2025-11-30 12:20:52,501 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/geomutils.py', reloading
+2025-11-30 12:20:52,501 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/geomutils.py', reloading
+2025-11-30 12:20:52,502 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/geomutils.py', reloading
+2025-11-30 12:20:52,502 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/geomutils.py', reloading
+2025-11-30 12:20:52,502 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/formatters.py', reloading
+2025-11-30 12:20:52,503 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/formatters.py', reloading
+2025-11-30 12:20:52,503 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/formatters.py', reloading
+2025-11-30 12:20:52,503 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/formatters.py', reloading
+2025-11-30 12:20:52,503 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/units.py', reloading
+2025-11-30 12:20:52,503 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/units.py', reloading
+2025-11-30 12:20:52,504 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/units.py', reloading
+2025-11-30 12:20:52,504 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/units.py', reloading
+2025-11-30 12:20:52,504 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/arciv.py', reloading
+2025-11-30 12:20:52,505 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/arciv.py', reloading
+2025-11-30 12:20:52,505 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/arciv.py', reloading
+2025-11-30 12:20:52,505 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/arciv.py', reloading
+2025-11-30 12:20:52,505 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/colors.py', reloading
+2025-11-30 12:20:52,506 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/colors.py', reloading
+2025-11-30 12:20:52,506 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/colors.py', reloading
+2025-11-30 12:20:52,506 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/colors.py', reloading
+2025-11-30 12:20:52,507 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/yaml.py', reloading
+2025-11-30 12:20:52,507 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/yaml.py', reloading
+2025-11-30 12:20:52,507 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/yaml.py', reloading
+2025-11-30 12:20:52,507 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/yaml.py', reloading
+2025-11-30 12:20:52,508 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/__init__.py', reloading
+2025-11-30 12:20:52,508 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/__init__.py', reloading
+2025-11-30 12:20:52,508 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/__init__.py', reloading
+2025-11-30 12:20:52,509 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/__init__.py', reloading
+2025-11-30 12:20:52,509 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/fonts.py', reloading
+2025-11-30 12:20:52,509 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/fonts.py', reloading
+2025-11-30 12:20:52,509 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/fonts.py', reloading
+2025-11-30 12:20:52,509 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/fonts.py', reloading
+2025-11-30 12:20:52,510 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/sequencer.py', reloading
+2025-11-30 12:20:52,510 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/sequencer.py', reloading
+2025-11-30 12:20:52,510 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/sequencer.py', reloading
+2025-11-30 12:20:52,510 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/sequencer.py', reloading
+2025-11-30 12:20:52,510 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/abag.py', reloading
+2025-11-30 12:20:52,511 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/abag.py', reloading
+2025-11-30 12:20:52,511 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/abag.py', reloading
+2025-11-30 12:20:52,511 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/abag.py', reloading
+2025-11-30 12:20:52,511 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/logger.py', reloading
+2025-11-30 12:20:52,512 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/logger.py', reloading
+2025-11-30 12:20:52,512 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/logger.py', reloading
+2025-11-30 12:20:52,512 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/logger.py', reloading
+2025-11-30 12:20:52,512 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rl_accel.py', reloading
+2025-11-30 12:20:52,513 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rl_accel.py', reloading
+2025-11-30 12:20:52,513 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rl_accel.py', reloading
+2025-11-30 12:20:52,513 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/reportlab/lib/rl_accel.py', reloading
+2025-11-30 12:20:52,523 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/multicol.py', reloading
+2025-11-30 12:20:52,523 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/flowables.py', reloading
+2025-11-30 12:20:52,525 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/xpreformatted.py', reloading
+2025-11-30 12:20:52,526 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/frames.py', reloading
+2025-11-30 12:20:52,526 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/paraparser.py', reloading
+2025-11-30 12:20:52,526 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/para.py', reloading
+2025-11-30 12:20:52,528 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/__init__.py', reloading
+2025-11-30 12:20:52,529 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/figures.py', reloading
+2025-11-30 12:20:52,529 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/doctemplate.py', reloading
+2025-11-30 12:20:52,529 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/paragraph.py', reloading
+2025-11-30 12:20:52,529 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/tableofcontents.py', reloading
+2025-11-30 12:20:52,530 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/platypus/tables.py', reloading
+2025-11-30 12:20:52,530 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/fonts.py', reloading
+2025-11-30 12:20:52,530 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/attrmap.py', reloading
+2025-11-30 12:20:52,530 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/sequencer.py', reloading
+2025-11-30 12:20:52,533 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/rparsexml.py', reloading
+2025-11-30 12:20:52,533 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/formatters.py', reloading
+2025-11-30 12:20:52,533 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/fontfinder.py', reloading
+2025-11-30 12:20:52,534 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/pagesizes.py', reloading
+2025-11-30 12:20:52,534 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/arciv.py', reloading
+2025-11-30 12:20:52,534 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/corp.py', reloading
+2025-11-30 12:20:52,534 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/units.py', reloading
+2025-11-30 12:20:52,534 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/rltempfile.py', reloading
+2025-11-30 12:20:52,534 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/__init__.py', reloading
+2025-11-30 12:20:52,535 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/colors.py', reloading
+2025-11-30 12:20:52,535 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/textsplit.py', reloading
+2025-11-30 12:20:52,535 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/enums.py', reloading
+2025-11-30 12:20:52,535 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/utils.py', reloading
+2025-11-30 12:20:52,536 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/boxstuff.py', reloading
+2025-11-30 12:20:52,536 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/rl_safe_eval.py', reloading
+2025-11-30 12:20:52,536 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/yaml.py', reloading
+2025-11-30 12:20:52,536 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/geomutils.py', reloading
+2025-11-30 12:20:52,536 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/abag.py', reloading
+2025-11-30 12:20:52,536 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/PyFontify.py', reloading
+2025-11-30 12:20:52,536 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/testutils.py', reloading
+2025-11-30 12:20:52,537 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/styles.py', reloading
+2025-11-30 12:20:52,537 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/normalDate.py', reloading
+2025-11-30 12:20:52,537 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/logger.py', reloading
+2025-11-30 12:20:52,537 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/pdfencrypt.py', reloading
+2025-11-30 12:20:52,537 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/randomtext.py', reloading
+2025-11-30 12:20:52,538 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/validators.py', reloading
+2025-11-30 12:20:52,538 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/codecharts.py', reloading
+2025-11-30 12:20:52,538 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/extformat.py', reloading
+2025-11-30 12:20:52,538 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/rl_accel.py', reloading
+2025-11-30 12:20:52,539 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/lib/pygments2xpre.py', reloading
+2025-11-30 12:20:52,539 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfgen/pdfgeom.py', reloading
+2025-11-30 12:20:52,540 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfgen/pathobject.py', reloading
+2025-11-30 12:20:52,540 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfgen/__init__.py', reloading
+2025-11-30 12:20:52,540 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfgen/canvas.py', reloading
+2025-11-30 12:20:52,541 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfgen/textobject.py', reloading
+2025-11-30 12:20:52,541 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfgen/pdfimages.py', reloading
+2025-11-30 12:20:52,541 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/__init__.py', reloading
+2025-11-30 12:20:52,541 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/rl_config.py', reloading
+2025-11-30 12:20:52,541 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_enc_macroman.py', reloading
+2025-11-30 12:20:52,542 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_enc_zapfdingbats.py', reloading
+2025-11-30 12:20:52,542 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_cidfontdata.py', reloading
+2025-11-30 12:20:52,542 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_symbol.py', reloading
+2025-11-30 12:20:52,542 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_courier.py', reloading
+2025-11-30 12:20:52,545 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_enc_standard.py', reloading
+2025-11-30 12:20:52,545 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_can_cmap_data.py', reloading
+2025-11-30 12:20:52,545 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_timesbold.py', reloading
+2025-11-30 12:20:52,545 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_zapfdingbats.py', reloading
+2025-11-30 12:20:52,546 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_glyphlist.py', reloading
+2025-11-30 12:20:52,546 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/pdfmetrics.py', reloading
+2025-11-30 12:20:52,546 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/rl_codecs.py', reloading
+2025-11-30 12:20:52,546 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_helveticaboldoblique.py', reloading
+2025-11-30 12:20:52,546 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_enc_symbol.py', reloading
+2025-11-30 12:20:52,546 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/__init__.py', reloading
+2025-11-30 12:20:52,547 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_courierboldoblique.py', reloading
+2025-11-30 12:20:52,547 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/pdfutils.py', reloading
+2025-11-30 12:20:52,547 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_enc_winansi.py', reloading
+2025-11-30 12:20:52,547 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_courierbold.py', reloading
+2025-11-30 12:20:52,547 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_helveticabold.py', reloading
+2025-11-30 12:20:52,547 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/pdfpattern.py', reloading
+2025-11-30 12:20:52,547 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata.py', reloading
+2025-11-30 12:20:52,548 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/ttfonts.py', reloading
+2025-11-30 12:20:52,548 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_enc_macexpert.py', reloading
+2025-11-30 12:20:52,548 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_enc_pdfdoc.py', reloading
+2025-11-30 12:20:52,548 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/pdfdoc.py', reloading
+2025-11-30 12:20:52,548 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_courieroblique.py', reloading
+2025-11-30 12:20:52,548 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/pdfform.py', reloading
+2025-11-30 12:20:52,549 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/acroform.py', reloading
+2025-11-30 12:20:52,549 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_timesitalic.py', reloading
+2025-11-30 12:20:52,549 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_timesroman.py', reloading
+2025-11-30 12:20:52,549 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_helveticaoblique.py', reloading
+2025-11-30 12:20:52,549 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/cidfonts.py', reloading
+2025-11-30 12:20:52,549 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_helvetica.py', reloading
+2025-11-30 12:20:52,550 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/pdfbase/_fontdata_widths_timesbolditalic.py', reloading
+2025-11-30 12:20:52,551 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/rl_settings.py', reloading
+2025-11-30 12:20:52,553 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/stacked_column.py', reloading
+2025-11-30 12:20:52,553 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/excelcolors.py', reloading
+2025-11-30 12:20:52,553 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/exploded_pie.py', reloading
+2025-11-30 12:20:52,554 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/radar.py', reloading
+2025-11-30 12:20:52,554 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/stacked_bar.py', reloading
+2025-11-30 12:20:52,554 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/__init__.py', reloading
+2025-11-30 12:20:52,554 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/scatter.py', reloading
+2025-11-30 12:20:52,555 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/line_chart.py', reloading
+2025-11-30 12:20:52,555 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/scatter_lines.py', reloading
+2025-11-30 12:20:52,555 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/simple_pie.py', reloading
+2025-11-30 12:20:52,556 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/linechart_with_markers.py', reloading
+2025-11-30 12:20:52,557 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/runall.py', reloading
+2025-11-30 12:20:52,557 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/scatter_lines_markers.py', reloading
+2025-11-30 12:20:52,557 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/filled_radar.py', reloading
+2025-11-30 12:20:52,558 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/clustered_column.py', reloading
+2025-11-30 12:20:52,559 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/bubble.py', reloading
+2025-11-30 12:20:52,560 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/samples/clustered_bar.py', reloading
+2025-11-30 12:20:52,560 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/renderSVG.py', reloading
+2025-11-30 12:20:52,561 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/widgets/grids.py', reloading
+2025-11-30 12:20:52,562 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/widgets/eventcal.py', reloading
+2025-11-30 12:20:52,562 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/widgets/flags.py', reloading
+2025-11-30 12:20:52,562 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/widgets/adjustableArrow.py', reloading
+2025-11-30 12:20:52,562 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/widgets/__init__.py', reloading
+2025-11-30 12:20:52,562 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/widgets/markers.py', reloading
+2025-11-30 12:20:52,562 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/widgets/table.py', reloading
+2025-11-30 12:20:52,563 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/widgets/signsandsymbols.py', reloading
+2025-11-30 12:20:52,563 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/axes.py', reloading
+2025-11-30 12:20:52,563 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/slidebox.py', reloading
+2025-11-30 12:20:52,564 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/doughnut.py', reloading
+2025-11-30 12:20:52,565 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/areas.py', reloading
+2025-11-30 12:20:52,565 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/utils3d.py', reloading
+2025-11-30 12:20:52,565 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/__init__.py', reloading
+2025-11-30 12:20:52,565 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/lineplots.py', reloading
+2025-11-30 12:20:52,565 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/utils.py', reloading
+2025-11-30 12:20:52,566 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/linecharts.py', reloading
+2025-11-30 12:20:52,566 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/dotbox.py', reloading
+2025-11-30 12:20:52,566 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/markers.py', reloading
+2025-11-30 12:20:52,566 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/spider.py', reloading
+2025-11-30 12:20:52,566 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/barcharts.py', reloading
+2025-11-30 12:20:52,566 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/legends.py', reloading
+2025-11-30 12:20:52,566 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/textlabels.py', reloading
+2025-11-30 12:20:52,567 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/charts/piecharts.py', reloading
+2025-11-30 12:20:52,567 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/renderPDF.py', reloading
+2025-11-30 12:20:52,567 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/__init__.py', reloading
+2025-11-30 12:20:52,567 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/renderbase.py', reloading
+2025-11-30 12:20:52,567 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/utils.py', reloading
+2025-11-30 12:20:52,568 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/shapes.py', reloading
+2025-11-30 12:20:52,568 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/widgetbase.py', reloading
+2025-11-30 12:20:52,568 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/lto.py', reloading
+2025-11-30 12:20:52,568 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/fourstate.py', reloading
+2025-11-30 12:20:52,568 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/test.py', reloading
+2025-11-30 12:20:52,570 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/code128.py', reloading
+2025-11-30 12:20:52,570 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/ecc200datamatrix.py', reloading
+2025-11-30 12:20:52,570 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/qrencoder.py', reloading
+2025-11-30 12:20:52,571 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/__init__.py', reloading
+2025-11-30 12:20:52,571 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/usps4s.py', reloading
+2025-11-30 12:20:52,571 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/widgets.py', reloading
+2025-11-30 12:20:52,571 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/usps.py', reloading
+2025-11-30 12:20:52,571 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/qr.py', reloading
+2025-11-30 12:20:52,572 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/eanbc.py', reloading
+2025-11-30 12:20:52,572 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/code39.py', reloading
+2025-11-30 12:20:52,572 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/common.py', reloading
+2025-11-30 12:20:52,572 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/code93.py', reloading
+2025-11-30 12:20:52,573 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/barcode/dmtx.py', reloading
+2025-11-30 12:20:52,573 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/testshapes.py', reloading
+2025-11-30 12:20:52,573 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/testdrawings.py', reloading
+2025-11-30 12:20:52,574 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/transform.py', reloading
+2025-11-30 12:20:52,574 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/svgpath.py', reloading
+2025-11-30 12:20:52,574 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/renderPS.py', reloading
+2025-11-30 12:20:52,574 - werkzeug - INFO -  * Detected change in '/home/ces/.local/lib/python3.8/site-packages/~eportlab/graphics/renderPM.py', reloading
+2025-11-30 12:20:53,363 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 12:20:53,644 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 12:20:53,644 - werkzeug - INFO -  * Debugger PIN: 137-801-259
+2025-11-30 12:21:37,548 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.180.132:5000
+2025-11-30 12:21:37,548 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-30 12:21:37,551 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 12:21:37,834 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 12:21:37,834 - werkzeug - INFO -  * Debugger PIN: 137-801-259
+2025-11-30 12:21:41,032 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:21:41] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-11-30 12:21:55,258 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:21:55] "OPTIONS /api/scan HTTP/1.1" 200 -
+2025-11-30 12:21:55,262 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:21:55] "POST /api/scan HTTP/1.1" 200 -
+2025-11-30 12:21:57,344 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:21:57] "GET /api/dashboard HTTP/1.1" 200 -
+2025-11-30 12:21:57,350 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:21:57] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 12:21:58,268 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:21:58] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-11-30 12:21:58,300 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:21:58] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 12:21:58,616 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:21:58] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 12:21:58,719 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:21:58] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 12:21:59,686 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:21:59] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 12:21:59,752 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:21:59] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 12:22:00,477 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:00] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 12:22:08,133 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:08] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 12:22:09,881 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:09] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 12:22:10,872 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:10] "GET /api/dashboard HTTP/1.1" 200 -
+2025-11-30 12:22:10,883 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:10] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 12:22:11,896 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:11] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 12:22:11,939 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:11] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 12:22:14,844 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:14] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 12:22:19,140 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:19] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 12:22:19,159 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:19] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 12:22:24,143 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:24] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 12:22:29,232 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:29] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 12:22:34,477 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:34] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 12:22:34,487 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:34] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 12:22:34,748 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:34] "POST /api/report HTTP/1.1" 200 -
+2025-11-30 12:22:34,751 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:34] "POST /api/report HTTP/1.1" 200 -
+2025-11-30 12:22:39,305 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:22:39] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 12:23:09,454 - werkzeug - INFO -  * Detected change in '/home/ces/backend/core/report_generator_fixed_safe.py', reloading
+2025-11-30 12:23:10,284 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 12:23:18,584 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.180.132:5000
+2025-11-30 12:23:18,584 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-30 12:23:18,587 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 12:23:18,943 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 12:23:18,943 - werkzeug - INFO -  * Debugger PIN: 137-801-259
+2025-11-30 12:23:24,891 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:24] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-11-30 12:23:35,133 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:35] "OPTIONS /api/scan HTTP/1.1" 200 -
+2025-11-30 12:23:35,136 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:35] "POST /api/scan HTTP/1.1" 200 -
+2025-11-30 12:23:36,664 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:36] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 12:23:36,667 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:36] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 12:23:36,687 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:36] "POST /api/report HTTP/1.1" 200 -
+2025-11-30 12:23:36,692 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:36] "POST /api/report HTTP/1.1" 200 -
+2025-11-30 12:23:38,143 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:38] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-11-30 12:23:41,070 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:41] "GET /api/dashboard HTTP/1.1" 200 -
+2025-11-30 12:23:41,075 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:41] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 12:23:42,355 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:42] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 12:23:42,405 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:42] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 12:23:42,726 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:42] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 12:23:42,732 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:42] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 12:23:52,612 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:52] "GET /api/dashboard HTTP/1.1" 200 -
+2025-11-30 12:23:52,619 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:52] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 12:23:52,778 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:52] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 12:23:53,905 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:53] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 12:23:53,951 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:53] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 12:23:58,415 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:58] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 12:23:58,422 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:58] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 12:23:59,584 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:59] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 12:23:59,595 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:59] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 12:23:59,618 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:59] "POST /api/report HTTP/1.1" 200 -
+2025-11-30 12:23:59,646 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:23:59] "POST /api/report HTTP/1.1" 200 -
+2025-11-30 12:24:08,469 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:24:08] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 12:53:29,669 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.180.132:5000
+2025-11-30 12:53:29,669 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-30 12:53:29,679 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 12:53:30,099 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 12:53:30,149 - werkzeug - INFO -  * Debugger PIN: 108-330-102
+2025-11-30 12:53:44,812 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:53:44] "[33mOPTIONS /login HTTP/1.1[0m" 404 -
+2025-11-30 12:53:54,773 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:53:54] "[33mOPTIONS /login HTTP/1.1[0m" 404 -
+2025-11-30 12:54:15,622 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 12:54:15] "[33mOPTIONS /login HTTP/1.1[0m" 404 -
+2025-11-30 13:03:42,882 - werkzeug - INFO -  * Detected change in '/home/ces/backend/app.py', reloading
+2025-11-30 13:03:43,557 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 13:03:43,947 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 13:03:43,948 - werkzeug - INFO -  * Debugger PIN: 108-330-102
+2025-11-30 13:10:38,455 - werkzeug - INFO -  * Detected change in '/home/ces/backend/app.py', reloading
+2025-11-30 13:10:39,352 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 13:10:39,730 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 13:10:39,731 - werkzeug - INFO -  * Debugger PIN: 108-330-102
+2025-11-30 13:10:44,926 - werkzeug - INFO -  * Detected change in '/home/ces/backend/app.py', reloading
+2025-11-30 13:10:44,926 - werkzeug - INFO -  * Detected change in '/home/ces/backend/app.py', reloading
+2025-11-30 13:10:44,931 - werkzeug - INFO -  * Detected change in '/home/ces/backend/.goutputstream-RFRKG3', reloading
+2025-11-30 13:10:44,931 - werkzeug - INFO -  * Detected change in '/home/ces/backend/app.py', reloading
+2025-11-30 13:10:45,907 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 13:10:47,867 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 13:10:47,868 - werkzeug - INFO -  * Debugger PIN: 108-330-102
+2025-11-30 13:10:51,987 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.180.132:5000
+2025-11-30 13:10:51,987 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-30 13:10:51,991 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 13:10:52,392 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 13:10:52,393 - werkzeug - INFO -  * Debugger PIN: 108-330-102
+2025-11-30 13:11:03,122 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:11:03] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-11-30 13:11:03,125 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:11:03] "[31m[1mGET /api/dashboard HTTP/1.1[0m" 401 -
+2025-11-30 13:11:21,940 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:11:21] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-11-30 13:11:21,947 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:11:21] "[31m[1mGET /api/dashboard HTTP/1.1[0m" 401 -
+2025-11-30 13:11:37,591 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:11:37] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-11-30 13:11:37,594 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:11:37] "[31m[1mGET /api/dashboard HTTP/1.1[0m" 401 -
+2025-11-30 13:17:04,620 - werkzeug - INFO -  * Detected change in '/home/ces/backend/app.py', reloading
+2025-11-30 13:17:04,834 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 13:17:05,365 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 13:17:05,366 - werkzeug - INFO -  * Debugger PIN: 108-330-102
+2025-11-30 13:17:09,691 - werkzeug - INFO -  * Detected change in '/home/ces/backend/app.py', reloading
+2025-11-30 13:17:09,692 - werkzeug - INFO -  * Detected change in '/home/ces/backend/app.py', reloading
+2025-11-30 13:17:09,726 - werkzeug - INFO -  * Detected change in '/home/ces/backend/.goutputstream-ZUHEG3', reloading
+2025-11-30 13:17:09,727 - werkzeug - INFO -  * Detected change in '/home/ces/backend/app.py', reloading
+2025-11-30 13:17:10,525 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 13:17:12,410 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 13:17:12,411 - werkzeug - INFO -  * Debugger PIN: 108-330-102
+2025-11-30 13:17:27,834 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.180.132:5000
+2025-11-30 13:17:27,837 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-30 13:17:27,844 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 13:17:28,214 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 13:17:28,215 - werkzeug - INFO -  * Debugger PIN: 108-330-102
+2025-11-30 13:17:32,361 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:17:32] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-11-30 13:17:43,247 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:17:43] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 13:17:44,280 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:17:44] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 13:17:46,588 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:17:46] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 13:17:51,333 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:17:51] "GET /api/dashboard HTTP/1.1" 200 -
+2025-11-30 13:17:51,338 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:17:51] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 13:17:52,352 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:17:52] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 13:17:52,393 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:17:52] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 13:17:53,669 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:17:53] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 13:18:02,512 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:18:02] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 13:18:02,520 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:18:02] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 13:18:12,577 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:18:12] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 13:18:25,087 - werkzeug - INFO -  * Detected change in '/home/ces/backend/app.py', reloading
+2025-11-30 13:18:40,913 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.180.132:5000
+2025-11-30 13:18:40,913 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-30 13:18:40,917 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-11-30 13:18:41,328 - werkzeug - WARNING -  * Debugger is active!
+2025-11-30 13:18:41,328 - werkzeug - INFO -  * Debugger PIN: 108-330-102
+2025-11-30 13:18:45,095 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:18:45] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-11-30 13:19:00,475 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:00] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 13:19:01,498 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:01] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 13:19:02,535 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:02] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 13:19:03,371 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:03] "GET /api/dashboard HTTP/1.1" 200 -
+2025-11-30 13:19:03,376 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:03] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-11-30 13:19:04,410 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:04] "GET /api/assets HTTP/1.1" 200 -
+2025-11-30 13:19:04,448 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:04] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-11-30 13:19:08,613 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:08] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 13:19:14,753 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:14] "GET /api/compliance HTTP/1.1" 200 -
+2025-11-30 13:19:14,761 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:14] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 13:19:24,413 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:24] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 13:19:24,432 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:24] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-11-30 13:19:24,444 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:24] "POST /api/report HTTP/1.1" 200 -
+2025-11-30 13:19:24,482 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:24] "POST /api/report HTTP/1.1" 200 -
+2025-11-30 13:19:24,831 - werkzeug - INFO - 127.0.0.1 - - [30/Nov/2025 13:19:24] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-11-30 13:30:01,894 - werkzeug - INFO -  * Detected change in '/home/ces/backend/app.py', reloading
+2025-12-01 09:57:40,872 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.180.132:5000
+2025-12-01 09:57:40,873 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-01 09:57:40,882 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-01 09:57:41,156 - werkzeug - WARNING -  * Debugger is active!
+2025-12-01 09:57:41,187 - werkzeug - INFO -  * Debugger PIN: 779-617-470
+2025-12-01 09:57:45,611 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:57:45] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-12-01 09:58:00,662 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:00] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-12-01 09:58:06,869 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:06] "GET /api/dashboard HTTP/1.1" 200 -
+2025-12-01 09:58:11,775 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:11] "OPTIONS /api/scan HTTP/1.1" 200 -
+2025-12-01 09:58:11,778 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:11] "POST /api/scan HTTP/1.1" 200 -
+2025-12-01 09:58:14,787 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:14] "OPTIONS /api/dashboard HTTP/1.1" 200 -
+2025-12-01 09:58:14,819 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:14] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-12-01 09:58:17,339 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:17] "GET /api/dashboard HTTP/1.1" 200 -
+2025-12-01 09:58:17,348 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:17] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-12-01 09:58:18,144 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:18] "GET /api/assets HTTP/1.1" 200 -
+2025-12-01 09:58:18,180 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:18] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-12-01 09:58:18,361 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:18] "GET /api/compliance HTTP/1.1" 200 -
+2025-12-01 09:58:18,366 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:18] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-12-01 09:58:24,859 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:24] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-12-01 09:58:28,340 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:28] "GET /api/dashboard HTTP/1.1" 200 -
+2025-12-01 09:58:28,345 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:28] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-12-01 09:58:28,973 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:28] "GET /api/assets HTTP/1.1" 200 -
+2025-12-01 09:58:28,997 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:28] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-12-01 09:58:34,902 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:34] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-12-01 09:58:39,036 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:39] "GET /api/compliance HTTP/1.1" 200 -
+2025-12-01 09:58:39,044 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:39] "OPTIONS /api/vulnerabilities HTTP/1.1" 200 -
+2025-12-01 09:58:49,104 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 09:58:49] "GET /api/vulnerabilities HTTP/1.1" 200 -
+2025-12-01 10:00:18,664 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 10:00:18] "OPTIONS /api/compliance HTTP/1.1" 200 -
+2025-12-01 10:00:20,746 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 10:00:20] "GET /api/compliance HTTP/1.1" 200 -
+2025-12-01 10:00:53,299 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 10:00:53] "OPTIONS /api/assets HTTP/1.1" 200 -
+2025-12-01 10:00:54,069 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 10:00:54] "GET /api/assets HTTP/1.1" 200 -
+2025-12-01 10:01:09,870 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 10:01:09] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-12-01 10:01:09,889 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 10:01:09] "OPTIONS /api/report HTTP/1.1" 200 -
+2025-12-01 10:01:09,893 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 10:01:09] "POST /api/report HTTP/1.1" 200 -
+2025-12-01 10:01:09,911 - werkzeug - INFO - 127.0.0.1 - - [01/Dec/2025 10:01:09] "POST /api/report HTTP/1.1" 200 -
